@@ -4,3 +4,97 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Utility */
+.d_flex{
+  display: flex;
+}
+
+.debug{
+  border: 2px solid red;
+}
+
+/* Header */
+header{
+  height: 70px;
+  width: 100%;
+  background-color: black;
+  display: fixed;
+  left: 0;
+  top: 0;
+}
+
+header nav{
+  height: 100%;
+}
+
+nav ul{
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul li{
+  list-style: none;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+/* Main */
+
+main{
+  height: calc(100vh - 80px);
+  overflow: auto;
+  background-color: black;
+  color: white;
+}
+
+main .container{
+  width: 98%;
+  margin: 0 auto;
+}
+
+.container .row{
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .row .column{
+  width:calc(100% /7);
+  margin-bottom: 15px;
+  padding:0 5px;
+}
+
+.column .card{
+  width: 100%;
+  position: relative;
+}
+
+.column .card img{
+  width: 100%;
+}
+
+.column .card .text{
+  width: 90px;
+  font-size: .7vw;
+  background-color: rgba(99, 112, 123, 0.5);
+  padding: 8px 5px;
+  position: absolute;
+  left: 0;
+  top: 115px;
+}
+
+
+/* Footer */
+
+footer{
+  height: 80px;
+}
