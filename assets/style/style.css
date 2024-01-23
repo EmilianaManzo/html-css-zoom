@@ -13,32 +13,39 @@ body{
   display: flex;
 }
 
-.debug{
+/* .debug{
   border: 2px solid red;
-}
+} */
 
 /* Header */
 header{
   height: 70px;
   width: 100%;
   background-color: black;
-  display: fixed;
+  position: fixed;
   left: 0;
   top: 0;
+  z-index: 999;
 }
 
 header nav{
   height: 100%;
 }
 
-nav ul{
+header nav ul{
   height: 100%;
   justify-content: flex-end;
   align-items: center;
+  ;
 }
 
-nav ul li{
+header nav ul li{
   list-style: none;
+  font-size: 0.8vw;
+  background-color: #4a4a4a;
+  margin: 0 5px;
+  padding: 7px 5px;
+  border-radius: 8px;
 }
 
 nav ul li a{
@@ -46,18 +53,25 @@ nav ul li a{
   color: white;
 }
 
+nav ul li a:hover{
+  opacity: 0.7;
+}
+
 /* Main */
 
 main{
   height: calc(100vh - 80px);
-  overflow: auto;
   background-color: black;
   color: white;
+  overflow: auto;
+  
 }
 
 main .container{
-  width: 98%;
+  width: 100vw;
+  max-width: 1400px;
   margin: 0 auto;
+  padding-top: 100px;
 }
 
 .container .row{
@@ -68,7 +82,6 @@ main .container{
 }
 
 .container .row .column{
-  width:calc(100% /7);
   margin-bottom: 15px;
   padding:0 5px;
 }
@@ -78,18 +91,17 @@ main .container{
   position: relative;
 }
 
-.column .card img{
+img{
   width: 100%;
 }
 
 .column .card .text{
-  width: 90px;
-  font-size: .7vw;
+  font-size: .6vw;
   background-color: rgba(99, 112, 123, 0.5);
   padding: 8px 5px;
   position: absolute;
   left: 0;
-  top: 115px;
+  bottom: 4px;
 }
 
 
@@ -97,4 +109,65 @@ main .container{
 
 footer{
   height: 80px;
+  background-color: #222222;
+  color: white;
 }
+
+footer .row{
+  width: 100%;
+  height: 100%;
+}
+
+footer .tools_left,
+footer .foot_right{
+  width: 25%;
+}
+
+footer .tools_center{
+  width: 50%;
+}
+
+
+.tools .icon{
+  text-align: center;
+  height: 80%;
+  padding: 20px 10px;
+}
+.tools .icon i{
+  font-size: 1.2rem;
+}
+.tools .icon_text{
+  font-size: 0.5rem;
+}
+
+.tools .arrow_up{
+  padding-top: 25px;
+}
+
+footer .tools_center{
+  justify-content: center;
+}
+
+.tools_center .active{
+  color: #4ac20a;
+}
+
+
+.foot_right{
+  position: relative;
+}
+
+.foot_right div{
+  background-color: #4a4a4a;
+  color: red;
+  text-align: center;
+  width: 25%;
+  height: 70px;
+  line-height: 80px;
+  font-size: 0.7vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
