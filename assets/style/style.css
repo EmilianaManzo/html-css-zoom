@@ -13,9 +13,22 @@ body{
   display: flex;
 }
 
-/* .debug{
+.btn{
+  border: none;
+  cursor: pointer;
+  font-size: 0.5rem;
+  padding: 0 5px;
+  color: white;
+}
+
+
+.btn:hover{
+  opacity: 0.7;
+}
+
+.debug{
   border: 2px solid red;
-} */
+}
 
 /* Header */
 header{
@@ -28,7 +41,22 @@ header{
   z-index: 999;
 }
 
-header nav{
+header div{
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header div .btn{
+  font-size: .8vw;
+  background-color: #4a4a4a;
+  margin: 0 5px;
+  padding: 7px 5px;
+  border-radius: 8px;
+}
+
+/* Se è un nav */
+/* header nav{
   height: 100%;
 }
 
@@ -36,7 +64,6 @@ header nav ul{
   height: 100%;
   justify-content: flex-end;
   align-items: center;
-  ;
 }
 
 header nav ul li{
@@ -55,7 +82,7 @@ nav ul li a{
 
 nav ul li a:hover{
   opacity: 0.7;
-}
+} */
 
 /* Main */
 
@@ -125,9 +152,55 @@ footer .foot_right{
 
 footer .tools_center{
   width: 50%;
+  padding: 0 70px;
+}
+
+.foot_right{
+  position: relative;
+}
+
+.foot_right div{
+  background-color: #4a4a4a;
+  color: red;
+  text-align: center;
+  width: 25%;
+  height: 80px;
+  line-height: 80px;
+  font-size: 0.7vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Se sono bottoni */
+.tools .btn{
+  background-color:#222222;
+  height: 80px;
+  vertical-align: middle;
 }
 
 
+.tools .btn i{
+  font-size: 1.2rem;
+}
+.tools .btn.arrow_up i{
+  font-size: .8rem;
+  margin-right: 10px;
+}
+
+.tools.tools_center .btn{
+  margin-left: 9px;
+}
+
+
+.tools_center .active{
+  color: #4ac20a;
+}
+
+
+
+/* Se sono div  */
+/*
 .tools .icon{
   text-align: center;
   height: 80%;
@@ -150,24 +223,4 @@ footer .tools_center{
 
 .tools_center .active{
   color: #4ac20a;
-}
-
-
-.foot_right{
-  position: relative;
-}
-
-.foot_right div{
-  background-color: #4a4a4a;
-  color: red;
-  text-align: center;
-  width: 25%;
-  height: 70px;
-  line-height: 80px;
-  font-size: 0.7vw;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-
+} */
