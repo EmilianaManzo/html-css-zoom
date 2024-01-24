@@ -26,9 +26,9 @@ body{
   opacity: 0.7;
 }
 
-.debug{
+/* .debug{
   border: 2px solid red;
-}
+} */
 
 /* Header */
 header{
@@ -54,7 +54,7 @@ header div .btn{
 /* Main */
 
 main{
-  height: calc(100vh - 160px);
+  height: calc(100vh - 150px);
   background-color: black;
   color: white;
   overflow: auto;
